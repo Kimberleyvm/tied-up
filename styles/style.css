@@ -62,7 +62,8 @@ body, html {
     opacity: 0;
     animation: fade-in 2s forwards;
 }.logo {
-    width: 100%; /* Zorg ervoor dat de video de volledige breedte van de introductiecontainer gebruikt op kleinere schermen */
+    width: 80%; /* Aangepast naar 80% breedte */
+    max-height: 80vh; /* Voeg een maximale hoogte toe om de video binnen de container te houden */
 }
 
 .menu {
