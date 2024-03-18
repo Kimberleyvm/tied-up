@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+    background-color: black;
+    color: rgb(234, 227, 201);
+}
+h1{
+    text-align: center;
+}
+.container {
+    text-align: center; /* Centreer de inhoud van de container */
+}
+.videos {
+    display: flex;
+    flex-wrap: wrap; /* Zorgt ervoor dat de video's naar de volgende regel gaan als er niet genoeg ruimte is */
+    justify-content: center; /* Centreert de video's horizontaal */
+}
+.video {
+    text-align: center;
+    margin: 0 10px 20px; /* Ruimte tussen de video's */
+    width: 250px; /* Breedte van elke video */
+}
+.video img {
+    height: 250px;
+    width: 250px;
+    border-radius: 15%;
+    margin: 0 auto;
+    display: block;
+}@media only screen and (max-width: 600px){
+    .video img{
+        height: 200px;
+        width: 150px;
+    }
+}
+.video-info {
+    text-align: center; /* Centreert de tekst onder de afbeelding */
+}
+@media only screen and (max-width: 600px){
+    .video{
+        display: block;
+    }
+}
+form {
+    text-align: center;
+}

@@ -1,0 +1,103 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparante achtergrond */
+    z-index: 9999; /* Zorg ervoor dat het modaal venster bovenaan blijft */
+}
+
+/* Stijl modaal venster inhoud */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 200px auto; /* Centreren op het scherm */
+    text-align: center;
+}
+
+/* Stijl bevestigingsknop */
+#confirmButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirmButton:hover {
+    background-color: #0056b3;
+}
+
+.intro-container {
+    background-color: #000; /* Donkere achtergrond */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.afbeelding {
+    /* Stijlen voor de afbeelding */
+    opacity: 1;
+    animation: fade-out 2s forwards;
+}
+
+.logo {
+    /* Stijlen voor het logo */
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+
+.menu {
+    opacity: 0;
+    transition: opacity 1s ease;
+    word-spacing: 20px;
+    height: 100px;
+    text-align: center;
+    padding-top: 45px;
+} 
+.menu a {
+    font-size: 20pt;
+    text-decoration: none;
+    color: rgb(234, 227, 201);
+    opacity: 40%;
+}
+.edge{
+    border: 3px solid rgb(234, 227, 201);
+    width: 100%;
+    margin: -1px;
+    opacity: 30%;
+}
+.fade-in {
+    opacity: 1 !important; /* Overschrijf de opacity om er zeker van te zijn dat de animatie wordt toegepast */
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
