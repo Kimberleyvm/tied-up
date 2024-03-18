@@ -46,8 +46,11 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}@media only screen and (max-width: 600px) {
+    .intro-container {
+        padding: 20px; /* Voeg wat ruimte toe rondom de introductiecontainer op kleinere schermen */
+    }
 }
-
 .afbeelding {
     /* Stijlen voor de afbeelding */
     opacity: 1;
@@ -58,6 +61,8 @@ body, html {
     /* Stijlen voor het logo */
     opacity: 0;
     animation: fade-in 2s forwards;
+}.logo {
+    width: 100%; /* Zorg ervoor dat de video de volledige breedte van de introductiecontainer gebruikt op kleinere schermen */
 }
 
 .menu {
@@ -67,7 +72,9 @@ body, html {
     height: 100px;
     text-align: center;
     padding-top: 45px;
-} 
+}.menu {
+    font-size: 16px; /* Verminder de grootte van de menu-items op kleinere schermen */
+}
 .menu a {
     font-size: 20pt;
     text-decoration: none;
