@@ -4,6 +4,18 @@ body, html {
     height: 100%;
     overflow: hidden;
 }
+/* fonts */
+
+
+.tourney-font {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
 .modal {
     display: none;
     position: fixed;
@@ -41,15 +53,13 @@ body, html {
 
 .intro-container {
     background-color: #000; /* Donkere achtergrond */
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }@media only screen and (max-width: 600px) {
-    .intro-container {
-        padding: 10px; /* Voeg wat ruimte toe rondom de introductiecontainer op kleinere schermen */
-    }
+    
 }
 .afbeelding {
     /* Stijlen voor de afbeelding */
@@ -61,12 +71,13 @@ body, html {
     /* Stijlen voor het logo */
     opacity: 0;
     animation: fade-in 2s forwards;
-}.logo {
-    width: 80%; /* Aangepast naar 80% breedte */
-    max-height: 80vh; /* Voeg een maximale hoogte toe om de video binnen de container te houden */
+}.logo {   
+        width: 80%; /* Aangepast naar 80% breedte */
+        max-height: 80vh; /* Voeg een maximale hoogte toe om de video binnen de container te houden */
 }
 
 .menu {
+    font-family: "Tourney", sans-serif;
     opacity: 0;
     transition: opacity 1s ease;
     word-spacing: 20px;
@@ -74,13 +85,26 @@ body, html {
     text-align: center;
     padding-top: 45px;
 }.menu {
-    font-size: 16px; /* Verminder de grootte van de menu-items op kleinere schermen */
+    font-size: 16px; 
 }
 .menu a {
-    font-size: 16pt;
+    font-family: "Tourney", sans-serif;
+    font-size: 30pt;
     text-decoration: none;
     color: rgb(234, 227, 201);
     opacity: 40%;
+}@media only screen and (max-width: 600px) {
+    .menu a {
+        font-size: 20pt;
+    }
+}
+.menu a:hover {
+    color: #fcfcfb;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.menu a:active {
+    color: #938b8b;
+    
 }
 .edge{
     border: 3px solid rgb(234, 227, 201);
