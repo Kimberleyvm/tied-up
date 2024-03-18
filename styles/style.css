@@ -48,7 +48,7 @@ body, html {
     align-items: center;
 }@media only screen and (max-width: 600px) {
     .intro-container {
-        padding: 20px; /* Voeg wat ruimte toe rondom de introductiecontainer op kleinere schermen */
+        padding: 10px; /* Voeg wat ruimte toe rondom de introductiecontainer op kleinere schermen */
     }
 }
 .afbeelding {
