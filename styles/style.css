@@ -95,7 +95,7 @@ body, html {
     opacity: 40%;
 }@media only screen and (max-width: 600px) {
     .menu a {
-        font-size: 16pt;
+        font-size: 14pt;
     }
 }
 .menu a:hover {
