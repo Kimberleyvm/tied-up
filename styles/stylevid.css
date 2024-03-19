@@ -40,6 +40,7 @@ h1{
 }
 
 .menu-icon {
+    color: rgb(234, 227, 201);
     background: none;
     border: none;
     font-size: 24px;
@@ -65,6 +66,9 @@ h1{
 
 /* CSS voor weergave van mobiel menu */
 @media only screen and (max-width: 600px) {
+    .menu {
+        display: none; /* Verberg het gewone menu op kleine schermen */
+    }
     .mobile-menu {
         display: block; /* Toon het mobiele menu voor kleine schermen */
     }
