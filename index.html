@@ -3,119 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roxy Tied-Up -- Video Content</title>
-    <link rel="stylesheet" href="styles/stylevid.css">
+    <title>Roxy Tied-Up</title>
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    
-    <div class="container">
-        <div class="banner">
-            <video loop class='logo' autoplay muted>
-                <source src="vid/Banner video.mp4" type="video/mp4">
-                <!-- Voeg hier andere bronnen toe voor verschillende formaten -->
-                Your browser does not support the video tag.
-            </video>
+    <!-- 18+ melding modaal venster -->
+    <div class="modal" id="ageConfirmationModal">
+        <div class="modal-content">
+            <h2>Warning</h2>
+            <p>This website contains mature content. </p>
+            <button id="confirmButton">Yes, im 18+, continue to page</button>
         </div>
+    </div>
+
+    <div class="intro-container">
+        <video class='logo' autoplay muted>
+            <source src="vid/Roxy_introvid.mp4" type="video/mp4">
+            <!-- Voeg hier andere bronnen toe voor verschillende formaten -->
+            Your browser does not support the video tag.
+        </video>
         <hr class="edge">
         <nav class="menu">
-            <a href="index.html" target="_blank">Home</a>
-            <a href="#" target="_blank">Photography</a>
-            <a href="#" target="_blank">Agenda</a>
-            <a href="#" target="_blank">Contact</a>
-        </nav>
-        <!-- Mobiel menu voor kleine schermen -->
-    <div class="mobile-menu">
-        <button class="menu-icon" onclick="toggleMobileMenu()">☰</button>
-        <div class="mobile-menu-content">
             <a href="video.html" target="_blank">Video</a>
             <a href="#" target="_blank">Photography</a>
             <a href="#" target="_blank">Agenda</a>
             <a href="#" target="_blank">Contact</a>
-        <!-- Voeg meer menu-opties toe indien nodig -->
-        </div>
-    </div>
+        </nav>
         <hr class="edge">
-        <br>
-        <h1>Content available for download. Enjoy!</h1>
-    
-        <div class="videos">
-            <div class="video">
-                <img src="https://placehold.jp/250x250.png" alt="Video 1">
-                <div class="video-info">
-                    <h2>Video 1</h2>
-                    <p>Prijs: €10</p>
-                    <button class="buy-button" data-video="video1">Koop nu</button>
-                </div>
-            </div>
-    
-            <div class="video">
-                <img src="https://placehold.jp/250x250.png" alt="Video 2">
-                <div class="video-info">
-                    <h2>Video 2</h2>
-                    <p>Prijs: €15</p>
-                    <button class="buy-button" data-video="video2">Koop nu</button>
-                </div>
-            </div>
-    
-            <div class="video">
-                <img src="https://placehold.jp/250x250.png" alt="Video 3">
-                <div class="video-info">
-                    <h2>Video 3</h2>
-                    <p>Prijs: €20</p>
-                    <button class="buy-button" data-video="video3">Koop nu</button>
-                </div>
-            </div>
-
-            <div class="video">
-                <img src="https://placehold.jp/250x250.png" alt="Video 3">
-                <div class="video-info">
-                    <h2>Video 3</h2>
-                    <p>Prijs: €20</p>
-                    <button class="buy-button" data-video="video3">Koop nu</button>
-                </div>
-            </div>
-
-            <div class="video">
-                <img src="https://placehold.jp/250x250.png" alt="Video 3">
-                <div class="video-info">
-                    <h2>Video 3</h2>
-                    <p>Prijs: €20</p>
-                    <button class="buy-button" data-video="video3">Koop nu</button>
-                </div>
-            </div>
-
-            <div class="video">
-                <img src="https://placehold.jp/250x250.png" alt="Video 3">
-                <div class="video-info">
-                    <h2>Video 3</h2>
-                    <p>Prijs: €20</p>
-                    <button class="buy-button" data-video="video3">Koop nu</button>
-                </div>
-            </div>
-        </div>
     </div>
-    <br>
-    <hr class="edge">
-    <!-- Betalingsformulier -->
-    <form id="payment-form" action="process_payment.php" method="POST">
-        <input type="hidden" id="selected-video" name="selected-video"><br>
-        <label for="card-number">Kaartnummer:</label><br>
-        <input type="text" id="card-number" name="card-number" required><br>
-        <label for="expiry-date">Vervaldatum:</label><br>
-        <input type="text" id="expiry-date" name="expiry-date" required><br>
-        <label for="cvv">CVV:</label><br>
-        <input type="text" id="cvv" name="cvv" required><br>
-        <br>
-        <button type="submit">Betaal</button>
-    </form>
-    <br>
-    <hr class="edge">
-
-
     <script src="styles/js/script.js"></script>
 </body>
 </html>
