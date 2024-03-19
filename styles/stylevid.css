@@ -34,49 +34,7 @@ h1{
     color: rgb(234, 227, 201);
     text-decoration: none;
 }
-/* CSS voor mobiel menu */
-.mobile-menu {
-    display: none; /* Verberg het mobiele menu standaard */
-}
 
-.menu-icon {
-    color: rgb(234, 227, 201);
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.mobile-menu-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px;
-}
-
-.mobile-menu-content a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 0;
-}
-
-/* CSS voor weergave van mobiel menu */
-@media only screen and (max-width: 600px) {
-    .menu {
-        display: none; /* Verberg het gewone menu op kleine schermen */
-    }
-    .mobile-menu {
-        display: block; /* Toon het mobiele menu voor kleine schermen */
-    }
-
-    .mobile-menu-content {
-        display: none; /* Verberg het mobiele menu-inhoud standaard */
-    }
-}
 
 .container {
     text-align: center; /* Centreer de inhoud van de container */
@@ -119,3 +77,66 @@ form {
 .edge{
     border: 3px solid rgb(234, 227, 201);
 }
+/* Style de dropdown-button */
+.dropbtn {
+    background-color: #333;
+    color: rgb(234, 227, 201);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+/* Style de dropdown-content (verborgen standaard) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Style de links binnen de dropdown */
+.dropdown-content a {
+    color: rgb(234, 227, 201);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Wanneer je met de muis over een link in de dropdown gaat */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Toon de dropdown-content (wanneer de gebruiker klikt op de dropdown-button) */
+.show {
+    display: block;
+}
+
+/* CSS voor weergave van mobiel menu */
+@media only screen and (max-width: 600px) {
+    .dropdown {
+        display: block; /* Toon de dropdown op kleine schermen */
+    }
+
+    .menu {
+        display: none; /* Verberg het normale menu op kleine schermen */
+    }
+    .dropbtn {
+        display: inline-block; /* Toon de dropdown-button alleen op kleine schermen */
+    }
+}/* CSS voor weergave van normaal menu op grote schermen */
+@media only screen and (min-width: 601px) {
+    .menu {
+        display: block; /* Toon het normale menu op grote schermen */
+    }
+
+    .dropdown {
+        display: none; /* Verberg de dropdown op grote schermen */
+    }
+}
+
+  
