@@ -91,10 +91,12 @@ form {
 /* Style de dropdown-content (verborgen standaard) */
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #333;
     min-width: 160px;
     z-index: 1;
+    top: 100%; /* Plaats het menu onder de knop */
+    left: 0;
 }
 
 /* Style de links binnen de dropdown */
