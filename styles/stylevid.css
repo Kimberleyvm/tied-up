@@ -25,6 +25,7 @@ h1{
 }
 .logo{
     max-height:20vh;
+    width: 90%;
 }
 .container {
     text-align: center; /* Centreer de inhoud van de container */
