@@ -46,9 +46,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // JavaScript om het mobiele menu te laten verschijnen en verdwijnen
     function toggleMobileMenu() {
+        console.log("Mobile menu toggled"); // Debuginformatie toegevoegd
         var menuContent = document.querySelector('.mobile-menu-content');
         if (menuContent) {
             menuContent.style.display === 'block' ? menuContent.style.display = 'none' : menuContent.style.display = 'block';
         }
     }
+    
 });
