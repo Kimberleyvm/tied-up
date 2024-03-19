@@ -27,6 +27,53 @@ h1{
     max-height:20vh;
     width: 90%;
 }
+.menu{
+    word-spacing: 10px;
+}
+.menu a{
+    color: rgb(234, 227, 201);
+    text-decoration: none;
+}
+/* CSS voor mobiel menu */
+.mobile-menu {
+    display: none; /* Verberg het mobiele menu standaard */
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-menu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+}
+
+.mobile-menu-content a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+/* CSS voor weergave van mobiel menu */
+@media only screen and (max-width: 600px) {
+    .mobile-menu {
+        display: block; /* Toon het mobiele menu voor kleine schermen */
+    }
+
+    .mobile-menu-content {
+        display: none; /* Verberg het mobiele menu-inhoud standaard */
+    }
+}
+
 .container {
     text-align: center; /* Centreer de inhoud van de container */
     font-family: "Tourney", sans-serif;
