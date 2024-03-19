@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Selecteer de video en het menu element
     var video = document.querySelector('.logo');
     var menu = document.querySelector('.menu');
-    
+
     // Toon het modaal venster voor de 18+ melding
     var modal = document.getElementById('ageConfirmationModal');
     modal.style.display = 'block';
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Pauzeer de video en spring naar het laatste frame
         video.pause();
         video.currentTime = video.duration;
-        
+
         // Voeg een klasse toe om het menu in te laten faden
         menu.classList.add('fade-in');
         console.log("Video is gestopt, menu moet nu in beeld komen.");
@@ -30,4 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
         // Verberg het modaal venster wanneer de bevestigingsknop wordt ingedrukt
         modal.style.display = 'none';
     });
+
+    // JavaScript om het mobiele menu te laten verschijnen en verdwijnen
+    function toggleMobileMenu() {
+        var menuContent = document.querySelector('.mobile-menu-content');
+        menuContent.style.display === 'block' ? menuContent.style.display = 'none' : menuContent.style.display = 'block';
+    }
 });
