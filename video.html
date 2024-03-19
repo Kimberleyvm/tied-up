@@ -8,10 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script>// JavaScript om de dropdown te laten verschijnen en verdwijnen
+    function toggleDropdown() {
+        var dropdown = document.getElementById("myDropdown");
+        dropdown.classList.toggle("show");
+    }
+    
+    // Sluit de dropdown als de gebruiker klikt buiten het dropdown-menu
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 </head>
 <body>
-    
-    
     <div class="container">
         <div class="banner">
             <video loop class='logo' autoplay muted>
@@ -20,6 +38,22 @@
                 Your browser does not support the video tag.
             </video>
         </div>
+        <hr class="edge">
+        <nav class="menu">
+            <a href="index.html" target="_blank">Home</a>
+            <a href="#" target="_blank">Photography</a>
+            <a href="#" target="_blank">Agenda</a>
+            <a href="#" target="_blank">Contact</a>
+        </nav>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Optie 1</a>
+                <a href="#">Optie 2</a>
+                <a href="#">Optie 3</a>
+            </div>
+        </div>
+        <hr class="edge">
         <br>
         <h1>Content available for download. Enjoy!</h1>
     
@@ -95,8 +129,5 @@
     </form>
     <br>
     <hr class="edge">
-
-
-    <script src="script.js"></script>
 </body>
 </html>
