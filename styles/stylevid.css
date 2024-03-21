@@ -140,5 +140,14 @@ form {
         display: none; /* Verberg de dropdown op grote schermen */
     }
 }
+.socials{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+.socials img {
+    width: 50px;
+    height: 50px;
+}
 
   
